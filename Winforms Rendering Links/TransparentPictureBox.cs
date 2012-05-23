@@ -1,0 +1,66 @@
+/// <summary>
+/// Originally written by Chris Vega.
+/// http://social.msdn.microsoft.com/forums/en-US/winforms/thread/f43ed61e-6e15-41f8-801d-1e908810eed2/
+/// </summary>
+
+using System.Windows.Forms;
+using System.Drawing;
+using System;
+
+public class TransparentPictureBox : Control
+{
+    private Timer refresher;
+    private Image _image = null;
+
+    public TransparentPictureBox()
+    {
+        refresher = new Timer();
+        refresher.Tick += new EventHandler(this.TimerOnTick);
+        refresher.Interval = 50;
+        refresher.Start();
+    }
+
+    protected override CreateParams CreateParams
+    {
+        get
+        {
+            CreateParams cp = base.CreateParams;
+            cp.ExStyle |= 0x20;
+            return cp;
+        }
+    }
+
+    protected override void OnMove(EventArgs e)
+    {
+        base.RecreateHandle();
+    }
+
+    protected override void OnPaint(PaintEventArgs e)
+    {
+        if (_image != null)
+            e.Graphics.DrawImage(_image, (Width / 2) - (_image.Width / 2), (Height / 2) - (_image.Height / 2));
+    }
+
+    protected override void OnPaintBackground(PaintEventArgs e)
+    {
+    }
+
+    private void TimerOnTick(object source, EventArgs e)
+    {
+        base.RecreateHandle();
+        refresher.Stop();
+    }
+
+    public Image Image
+    {
+        get
+        {
+            return _image;
+        }
+        set
+        {
+            _image = value;
+            base.RecreateHandle();
+        }
+    }
+}

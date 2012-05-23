@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceExplorerXNAWF", "SpaceExplorerXNAWF.csproj", "{1C2CA02E-B756-4D2B-B27E-F740DB06F712}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2152F36-93F0-4D91-807A-DE7C44AB6AF1} = {C2152F36-93F0-4D91-807A-DE7C44AB6AF1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content", "Content\Content.contentproj", "{C2152F36-93F0-4D91-807A-DE7C44AB6AF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C2CA02E-B756-4D2B-B27E-F740DB06F712}.Debug|x86.ActiveCfg = Debug|x86
+		{1C2CA02E-B756-4D2B-B27E-F740DB06F712}.Debug|x86.Build.0 = Debug|x86
+		{1C2CA02E-B756-4D2B-B27E-F740DB06F712}.Release|x86.ActiveCfg = Release|x86
+		{1C2CA02E-B756-4D2B-B27E-F740DB06F712}.Release|x86.Build.0 = Release|x86
+		{C2152F36-93F0-4D91-807A-DE7C44AB6AF1}.Debug|x86.ActiveCfg = Debug|x86
+		{C2152F36-93F0-4D91-807A-DE7C44AB6AF1}.Debug|x86.Build.0 = Debug|x86
+		{C2152F36-93F0-4D91-807A-DE7C44AB6AF1}.Release|x86.ActiveCfg = Release|x86
+		{C2152F36-93F0-4D91-807A-DE7C44AB6AF1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

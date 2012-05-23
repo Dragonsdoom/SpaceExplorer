@@ -1,0 +1,11 @@
+Content\Arial.xnb
+Content\Play.xnb
+Content\Star.xnb
+Content\Header.xnb
+Content\Column.xnb
+Content\Backround.xnb
+Content\SelectionDisc.xnb
+Content\PlanetSmall.xnb
+Content\StarSystemStar.xnb
+Content\Planet.xnb
+Content\PlanetSmallUnknown.xnb

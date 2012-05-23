@@ -1,0 +1,8 @@
+Orion Explorer Concept
+A prototype procedural galaxy generator
+Created 1/5/2012 by Frank 'Dragonsdoom' V
+Written in C# with XNA and WinForms
+
+Most of the boilerplate sits in the main folder, with the game elements in the folder called Game.
+The XNA game studio (4.0) is required for further development.
+The XNA redistributable (4.0) is required for client machines.
