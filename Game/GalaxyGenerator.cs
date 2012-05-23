@@ -146,6 +146,9 @@ namespace SpaceExplorerXNAWF
             }
         }
 
+        /// <summary>
+        /// Colors all stars with new colors chosen at random from the color list.
+        /// </summary>
         public static void ColorStars()
         {
             Random rand = new Random();
